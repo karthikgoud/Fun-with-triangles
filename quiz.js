@@ -33,7 +33,7 @@ function score() {
     output.style.color = "lime";
     output.innerText = `Good Job !!!🎉 Your score is ${score} out of ${correctAnswer.length}`;
   } else {
-    output.style.color = "darkturquoise";
+    output.style.color = "yellow";
     output.innerText = `Your score is ${score} out of ${correctAnswer.length}. Try Again `;
   }
 }

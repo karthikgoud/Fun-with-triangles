@@ -131,6 +131,11 @@ p{
     padding: 1rem 2rem;
 }
 
+.question-no{
+    color: rgb(245, 194, 238);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /* footer */
 

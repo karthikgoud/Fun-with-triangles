@@ -18,5 +18,8 @@ function calculateHypotenuse() {
     Number(sideInput[1].value)
   );
   const hypotenuse = Math.sqrt(sumOfSideSquare);
-  outputEl.innerText = `The length of Hypotenuse is c = ${hypotenuse} `;
+  outputEl.innerText = `The length of Hypotenuse is c = ${hypotenuse.toFixed(
+    2
+  )}`;
+  outputEl.style.color = "yellow";
 }

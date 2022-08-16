@@ -13,5 +13,7 @@ function calculateArea() {
 
   const areaOfTriangle = 0.5 * base * height;
 
-  outputEl.innerText = `Area of Triangle is ${areaOfTriangle} (square units)`;
+  outputEl.innerText = `Area of Triangle is ${areaOfTriangle.toFixed(
+    2
+  )} (square units)`;
 }

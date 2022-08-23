@@ -13,13 +13,17 @@ function calculateSumSquare(a, b) {
 }
 
 function calculateHypotenuse() {
-  const sumOfSideSquare = calculateSumSquare(
-    Number(sideInput[0].value),
-    Number(sideInput[1].value)
-  );
-  const hypotenuse = Math.sqrt(sumOfSideSquare);
-  outputEl.innerText = `The length of Hypotenuse is c = ${hypotenuse.toFixed(
-    2
-  )}`;
-  outputEl.style.color = "yellow";
+  if (sideInput[0].value && sideInput[1].value) {
+    const sumOfSideSquare = calculateSumSquare(
+      Number(sideInput[0].value),
+      Number(sideInput[1].value)
+    );
+    const hypotenuse = Math.sqrt(sumOfSideSquare);
+    outputEl.innerText = `The length of Hypotenuse is c = ${hypotenuse.toFixed(
+      2
+    )}`;
+    outputEl.style.color = "yellow";
+  } else {
+    outputEl.textContent = "❌ Enter all input fields ❌";
+  }
 }

@@ -10,20 +10,25 @@ checkButton.addEventListener("click", isTriangles);
 // click handler
 function isTriangles() {
   if (inputs[0].value && inputs[1].value && inputs[2].value) {
-    const sumOfAngles = calculateSumOfAngles(
-      Number(inputs[0].value), //typecast string to number
-      Number(inputs[1].value),
-      Number(inputs[2].value)
-    );
+    if (inputs[0].value > 0 && inputs[1].value > 0 && inputs[2].value > 0) {
+      const sumOfAngles = calculateSumOfAngles(
+        Number(inputs[0].value), //typecast string to number
+        Number(inputs[1].value),
+        Number(inputs[2].value)
+      );
 
-    // logic
-    if (sumOfAngles === 180) {
-      output.innerText = " Yay!!! 👍, angles form a triangle";
+      // logic
+      if (sumOfAngles === 180) {
+        output.innerText = " Yay!!! 👍, Angles form a triangle.";
+      } else {
+        output.innerText = "Oh! oh!, Angles don`t form a triangle.";
+      }
     } else {
-      output.innerText = "Oh! oh!, angles don`t form a triangle";
+      output.textContent =
+        " ❌ Input value should be greater than ZERO to form a triangle. ❌";
     }
   } else {
-    output.textContent = " ❌ Enter all input fields ❌";
+    output.textContent = " ❌ Enter all input fields. ❌";
   }
 }
 

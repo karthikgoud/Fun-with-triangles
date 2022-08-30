@@ -6,7 +6,7 @@ calculateBtn.addEventListener("click", calculateArea);
 
 function calculateArea() {
   if (input[0].value && input[1].value) {
-    if (input[0].value >= 0 && input[1].value >= 0) {
+    if (input[0].value > 0 && input[1].value > 0) {
       const base = Number(input[0].value);
       const height = Number(input[1].value);
 
@@ -19,7 +19,8 @@ function calculateArea() {
         2
       )} (square units)`;
     } else {
-      outputEl.textContent = "Invalid input: Sides cannot have negative value.";
+      outputEl.textContent =
+        "Invalid input: Inputs value should be greater than ZERO.";
     }
   } else {
     outputEl.textContent = "❌ Enter all input fields ❌";

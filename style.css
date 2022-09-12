@@ -74,14 +74,12 @@ header nav a{
 main{
     background-color: var(--main-color);
     color: var(--maintext-color);
-
-    /* background-color: #FBEAEB; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 700px; */
-    /* height: 80vh; */
+    height: 100%;
+
 }
 .heading{
     font-size: 2rem;    
@@ -145,52 +143,13 @@ footer {
     justify-content: center;
     background-color: var(--header-color);
     gap: 1.5rem;
-    /* margin: auto ; */
     padding: 0.5rem;
+
 }
 
 .social-icons{
     width: 1.6rem;
 }
-
-/* -------Quiz--------- */
-
-.form-quiz {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.4rem;justify-content: center;
-}
-
-form p {
-    padding-bottom: 0.6rem;
-}
-
-.question-container {
-    padding: 1.6rem 2rem ;
-}
-
-.submit-button{
-    font-size: 1rem;
-    border-radius: 0.4rem;
-    padding: 0.4rem 1.5rem;
-    font-weight: 600;
-}
-
-.submit-button:hover{
-    cursor: pointer;
-    background-color: var(--button-backgroundcolor);
-}
-
-.separator {
-    width: 100%;
-    padding: 1.5px;
-    margin: 0 auto ;
-    background-color: rgba(58, 245, 114, 0.447);
-    border: none;
-    margin: 0.8rem 0 0.5rem 0;
-}
-
-
 
 /* hypotenous */
 
@@ -209,10 +168,4 @@ form p {
 .calculate-button:hover{
     cursor: pointer;
     background-color: var(--button-backgroundcolor);
-}
-
-/* area of triangle */
-
-#area-main{
-    height: 700px;
 }

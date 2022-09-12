@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./quiz-style.css">
     <title>Quiz on triangle</title>
 </head>
 
@@ -23,13 +23,13 @@
 
     </header>
 
-    <main>
-
+    <main id="quiz-main">
         <h2 class="heading">Quiz</h2>
 
         <form class="form-quiz">
             <div class="question-container">
-                <p class="question"><span class="question-no">Q1</span>. What is the third angle for the triangle where
+                <p class="question"><span class="question-no">Q1</span>. What is the third angle for the triangle
+                    where
                     angle1 = 45° and angle2 = 45°?
                 </p>
                 <label>
@@ -44,7 +44,8 @@
             </div>
             <div class="separator"></div>
             <div class="question-container">
-                <p class="question"><span class="question-no">Q2</span>. If a triangle has an angle of 90 degrees, what
+                <p class="question"><span class="question-no">Q2</span>. If a triangle has an angle of 90 degrees,
+                    what
                     is it called?</p>
                 <label>
                     <input type="radio" name="question 2" value="acute" />Acute
@@ -89,7 +90,8 @@
             <div class="separator"></div>
 
             <div class="question-container">
-                <p class="question"><span class="question-no">Q5</span>. The ratio of the measures of the three angles
+                <p class="question"><span class="question-no">Q5</span>. The ratio of the measures of the three
+                    angles
                     of a triangle is 2 : 3 : 4. The
                     measure of
                     the largest angle is</p>
@@ -117,6 +119,8 @@
                     <input type="radio" name="question 6" value="3" />3
                 </label>
             </div>
+            <div class="separator"></div>
+
             <div class="question-container">
                 <p class="question"><span class="question-no">Q7</span>. Which ancient Greek philosopher studied
                     triangles?</p>
@@ -130,6 +134,7 @@
                     <input type="radio" name="question 7" value="Pythagorus" />Pythagorus
                 </label>
             </div>
+            <div class="separator"></div>
 
             <div class="question-container">
                 <p class="question"><span class="question-no">Q8</span>. What is a hypotenuse?</p>
@@ -138,12 +143,15 @@
                     sides
                 </label>
                 <label>
-                    <input type="radio" name="question 8" value="Longest side of triangle" />Longest side of triangle
+                    <input type="radio" name="question 8" value="Longest side of triangle" />Longest side of
+                    triangle
                 </label>
                 <label>
-                    <input type="radio" name="question 8" value="Shortest side of triangle" />Shortest side of triangle
+                    <input type="radio" name="question 8" value="Shortest side of triangle" />Shortest side of
+                    triangle
                 </label>
             </div>
+            <div class="separator"></div>
 
             <div class="question-container">
                 <p class="question"><span class="question-no">Q9</span>. What's the name of the type of maths that
@@ -159,9 +167,11 @@
                     <input type="radio" name="question 9" value="Trignometry" />Trignometry
                 </label>
             </div>
+            <div class="separator"></div>
 
             <div class="question-container">
-                <p class="question"><span class="question-no">Q10</span>. How many dimensions does a triangle have? </p>
+                <p class="question"><span class="question-no">Q10</span>. How many dimensions does a triangle have?
+                </p>
                 <label>
                     <input type="radio" name="question 10" value="1" />1
                 </label>
@@ -172,12 +182,11 @@
                     <input type="radio" name="question 10" value="3" />3
                 </label>
             </div>
+
         </form>
+
         <button class="submit-button" id="submit-btn">Submit Answer</button>
         <div class="output-div" id="output-div"></div>
-
-
-
 
     </main>
     <footer>

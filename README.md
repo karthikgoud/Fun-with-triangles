@@ -5,4 +5,11 @@ A vanilla JS app which tells you about triangle, area of triangles, hypotenous a
 # live link:
 https://fun-with-triangle-project.netlify.app/
 
-<img width="947" alt="image" src="https://user-images.githubusercontent.com/9660782/178502847-4ddecf12-c821-4121-b21e-a7c7b6f85c61.png">
+<img width="942" alt="image" src="https://user-images.githubusercontent.com/9660782/190092060-400a7f1c-e583-43fb-b513-ce21ce727dac.png">
+
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/9660782/190092323-92891988-8ebc-4ac1-814c-f1621b34fa1f.png">
+
+<img width="925" alt="image" src="https://user-images.githubusercontent.com/9660782/190092148-78428cbb-0d01-41c0-9aef-dbe2e457fa90.png">
+
+<img width="937" alt="image" src="https://user-images.githubusercontent.com/9660782/190092188-91777b63-5d27-4e93-9de7-3098d2eb1e23.png">
+

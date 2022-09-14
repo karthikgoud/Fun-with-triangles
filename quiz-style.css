@@ -1,13 +1,20 @@
-:root{
-    --header-color:#CCF381;
-    --main-color:#4831D4;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
-    --headerfont--color:#101820;
+
+:root{
+    --header-color:#0e1b58;
+    --main-color:#4d358d;
+
+    --headerfont--color:#fff;
 
     --maintext-color:#f5f5f5;
 
-    --button-backgroundcolor:#d3d3d3;
+    --button-backgroundcolor:#9854b7;
     --button-color:#101820;
+}
+
+*{
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 body{
@@ -26,6 +33,19 @@ h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 
+a{
+    color: var(--headerfont--color);
+}
+
+.active {
+    font-weight: 500;
+    color: white;
+    border: 2px solid black;
+    padding: 0.2rem 0.6rem;
+    border-radius: 6px;
+    background-color: steelblue;
+}
+
 /* header */
 
 .brand-name{
@@ -39,7 +59,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
+
 }
 
 header h1{
@@ -67,8 +88,10 @@ header nav a{
 
 }
 .heading{
-    font-size: 2rem;    
-    padding: 1rem 0;
+    font-size: 2rem;
+    text-decoration: underline double;  
+    text-decoration-style: double ;
+    text-underline-offset: 0.6rem;
 }
 
 
@@ -94,12 +117,16 @@ form p {
     border-radius: 0.4rem;
     padding: 0.4rem 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
+
 }
 
 
 .submit-button:hover{
     cursor: pointer;
     background-color: var(--button-backgroundcolor);
+    color: #fff;
+
 }
 
 .separator {

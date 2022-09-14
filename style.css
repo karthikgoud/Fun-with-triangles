@@ -1,15 +1,20 @@
-:root{
-    --header-color:#CCF381;
-    --main-color:#4831D4;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 
-    --headerfont--color:#101820;
+:root{
+    --header-color:#0e1b58;
+    --main-color:#4d358d;
+
+    --headerfont--color:#fff;
 
     --maintext-color:#f5f5f5;
 
-    --button-backgroundcolor:#d3d3d3;
+    --button-backgroundcolor:#9854b7;
     --button-color:#101820;
 }
 
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 
 body{
     text-align: center;
@@ -54,11 +59,11 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.6rem 2rem;
 }
 
 header h1{
-    font-size: 2rem;
+    font-size:2rem;
     margin: 0;
 
 }
@@ -79,12 +84,16 @@ main{
     justify-content: center;
     align-items: center;
     height: 100%;
+    gap: 2rem;
 
 }
 .heading{
-    font-size: 2rem;    
-    padding: 1rem 0;
+    font-size: 2rem;
+    text-decoration: underline double;  
+    text-decoration-style: double ;
+    text-underline-offset: 0.6rem;
 }
+
 
 p{
     margin-bottom: 0.5rem;
@@ -93,9 +102,10 @@ p{
 
 .input-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 .input-container label {
@@ -103,9 +113,9 @@ p{
     padding-bottom: 0.5rem;
 }
 .input-container input {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 0.4rem;
-    margin-bottom: 1rem; ;
+    /* margin-bottom: 1rem; ; */
     border-radius: 0.5rem;
 }
 
@@ -114,19 +124,22 @@ p{
     border-radius: 0.4rem;
     padding: 0.4rem 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .check-button:hover{
     cursor: pointer;
     background-color: var(--button-backgroundcolor);
+    color: #fff;
+
 }
 
 .output-div{
     color: var(--maintext-color);
     font-size: 2rem;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
+    display: none;
+    margin-bottom: 1rem;
 }
 
 .question-no{
@@ -154,7 +167,7 @@ footer {
 /* hypotenous */
 
 #hypotenuse-img{
-    padding: 0.6rem 0 1rem 0;
+    padding: 0rem 0 1rem 0;
 }
 
 
@@ -163,9 +176,11 @@ footer {
     border-radius: 0.4rem;
     padding: 0.4rem 1.5rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .calculate-button:hover{
     cursor: pointer;
     background-color: var(--button-backgroundcolor);
+    color: #fff;
 }

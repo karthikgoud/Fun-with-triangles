@@ -15,14 +15,21 @@ function calculateArea() {
 
       const areaOfTriangle = 0.5 * base * height;
 
+      showOutput();
       outputEl.innerText = `Area of Triangle is: ${areaOfTriangle.toFixed(
         2
       )} (square units)`;
     } else {
+      showOutput();
       outputEl.textContent =
         "Invalid input: Inputs value should be greater than ZERO.";
     }
   } else {
+    showOutput();
     outputEl.textContent = "❌ Enter all input fields ❌";
   }
+}
+
+function showOutput() {
+  outputEl.style.display = "block";
 }

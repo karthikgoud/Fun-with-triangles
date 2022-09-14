@@ -2,7 +2,7 @@
 // we can access the by indexing ex: inputs[0] gives 1st input
 const inputs = document.querySelectorAll(".input-angle");
 
-const output = document.querySelector("#output");
+const outputEl = document.querySelector("#output");
 const checkButton = document.querySelector("#btn-check");
 
 checkButton.addEventListener("click", isTriangles);
@@ -19,16 +19,20 @@ function isTriangles() {
 
       // logic
       if (sumOfAngles === 180) {
-        output.innerText = " Yay!!! 👍, Angles form a triangle.";
+        showOutput();
+        outputEl.innerText = " Yay!!! 👍, Angles form a triangle.";
       } else {
-        output.innerText = "Oh! oh!, Angles don`t form a triangle.";
+        showOutput();
+        outputEl.innerText = "Oh! oh! 🙅‍♂️, Angles do not form a triangle.";
       }
     } else {
-      output.textContent =
+      showOutput();
+      outputEl.textContent =
         " ❌ Input value should be greater than ZERO to form a triangle. ❌";
     }
   } else {
-    output.textContent = " ❌ Enter all input fields. ❌";
+    showOutput();
+    outputEl.textContent = " ❌ Enter all input fields. ❌";
   }
 }
 
@@ -36,4 +40,8 @@ function isTriangles() {
 function calculateSumOfAngles(angle1, angle2, angle3) {
   const sumOfAngles = angle1 + angle2 + angle3;
   return sumOfAngles;
+}
+
+function showOutput() {
+  outputEl.style.display = "block";
 }

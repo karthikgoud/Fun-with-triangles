@@ -81,10 +81,9 @@ main{
     color: var(--maintext-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    gap: 2rem;
 
 }
 .heading{
@@ -105,7 +104,7 @@ p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .input-container label {
@@ -115,8 +114,13 @@ p{
 .input-container input {
     font-size: 1rem;
     padding: 0.4rem;
-    /* margin-bottom: 1rem; ; */
     border-radius: 0.5rem;
+}
+
+#divider{
+    border-left: 1px solid white;
+    height: 80%;
+    margin: 0 0.6rem;
 }
 
 .check-button{

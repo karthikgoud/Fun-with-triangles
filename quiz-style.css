@@ -13,6 +13,10 @@
     --button-color:#101820;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -150,6 +154,22 @@ form p {
     color: yellow;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.to-top{
+    padding: 1rem;
+}
+
+#try-again{
+    color: pink;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+#try-again:hover{
+    color: pink;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 /* footer */

@@ -232,9 +232,8 @@ footer {
     }
 
     main{
-    justify-content: center;
-    gap: 0.4rem;
-
+    justify-content: space-evenly;
+    height: 80%;
     }
 
     main p{

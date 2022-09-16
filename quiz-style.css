@@ -181,10 +181,60 @@ footer {
     background-color: var(--header-color);
     gap: 1.5rem;
     padding: 0.5rem;
-
-
 }
 
 .social-icons{
     width: 1.6rem;
+}
+
+/* media queries */
+
+@media (max-width:426px){
+
+    .active{
+        padding: 0.2rem 0.4rem;
+    }
+
+    header{
+        color: red;
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .brand-name{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    header nav{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav a{
+        padding: 0 0.4rem;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+    /* main */
+
+    .heading{
+        font-size: 1.4rem;
+    }
+
+    .form-quiz {
+        font-size: 0.9rem;
+    }
+
+    .question-no{
+        font-size: 1rem;
+    }
+
+    .question-container {
+        padding: 1.2rem 2rem ;
+    }
+    .output-div{
+        font-size: 1.6rem;
+    }
 }

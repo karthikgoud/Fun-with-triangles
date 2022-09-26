@@ -1,9 +1,6 @@
-# Fun-with-triangles
-Mark12- Fun with triangles
-A vanilla JS app which tells you about triangle, area of triangles, hypotenous and has question related to triangle to test your knowledge.
+# Mark-12: Fun-with-triangles
 
-# live link:
-https://fun-with-triangle-project.netlify.app/
+A vanilla JS app which tells you about **triangle or not**, **area of triangles**, **hypotenous** and has **Quiz** related to triangle to test your knowledge.
 
 <img width="942" alt="image" src="https://user-images.githubusercontent.com/9660782/190092060-400a7f1c-e583-43fb-b513-ce21ce727dac.png">
 
